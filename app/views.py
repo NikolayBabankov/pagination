@@ -27,7 +27,6 @@ def bus_stations(request):
         next_page_url = reverse('bus_stations') + f'?page={page_obj.next_page_number()}'
     else:
         next_page_url = None
-    # print(page_obj.num_pages())
     if not page_obj.has_previous():
         prev_page_url = None
     else:
